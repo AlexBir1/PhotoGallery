@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoGalleryAPI", "PhotoGalleryAPI\PhotoGalleryAPI.csproj", "{48273850-C824-45C6-9F35-922A6C87932B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoGalleryAPI.DAL", "PhotoGalleryAPI.DAL\PhotoGalleryAPI.DAL.csproj", "{EE1A7D57-039A-443C-8EDD-333600C70EF1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6788B3B5-4827-4EC0-9B41-252EDE11D9D1} = {6788B3B5-4827-4EC0-9B41-252EDE11D9D1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoGalleryAPI.Shared", "PhotoGalleryAPI.DTOs\PhotoGalleryAPI.Shared.csproj", "{5B03C05D-8E02-441D-AFA4-140F3B204A7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoGalleryAPI.Services", "PhotoGalleryAPI.Services\PhotoGalleryAPI.Services.csproj", "{DC2FF702-A4FB-4DF3-873B-A9DC4AE3DCEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoGalleryAPI.BaseResponse", "PhotoGalleryAPI.Response\PhotoGalleryAPI.BaseResponse.csproj", "{6788B3B5-4827-4EC0-9B41-252EDE11D9D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoGalleryAPI.Storage", "PhotoGalleryAPI.Storage\PhotoGalleryAPI.Storage.csproj", "{AF8DC80D-CC9E-48F4-96FA-57F50B0227BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48273850-C824-45C6-9F35-922A6C87932B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48273850-C824-45C6-9F35-922A6C87932B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48273850-C824-45C6-9F35-922A6C87932B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48273850-C824-45C6-9F35-922A6C87932B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE1A7D57-039A-443C-8EDD-333600C70EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE1A7D57-039A-443C-8EDD-333600C70EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE1A7D57-039A-443C-8EDD-333600C70EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE1A7D57-039A-443C-8EDD-333600C70EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B03C05D-8E02-441D-AFA4-140F3B204A7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B03C05D-8E02-441D-AFA4-140F3B204A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B03C05D-8E02-441D-AFA4-140F3B204A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B03C05D-8E02-441D-AFA4-140F3B204A7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC2FF702-A4FB-4DF3-873B-A9DC4AE3DCEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC2FF702-A4FB-4DF3-873B-A9DC4AE3DCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC2FF702-A4FB-4DF3-873B-A9DC4AE3DCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC2FF702-A4FB-4DF3-873B-A9DC4AE3DCEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6788B3B5-4827-4EC0-9B41-252EDE11D9D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6788B3B5-4827-4EC0-9B41-252EDE11D9D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6788B3B5-4827-4EC0-9B41-252EDE11D9D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6788B3B5-4827-4EC0-9B41-252EDE11D9D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF8DC80D-CC9E-48F4-96FA-57F50B0227BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8DC80D-CC9E-48F4-96FA-57F50B0227BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8DC80D-CC9E-48F4-96FA-57F50B0227BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8DC80D-CC9E-48F4-96FA-57F50B0227BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE6D2FA1-22FA-4AB0-8B95-0FD493584994}
+	EndGlobalSection
+EndGlobal
