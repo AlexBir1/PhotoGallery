@@ -28,7 +28,7 @@ namespace PhotoGalleryAPI.Controllers
                 throw new ArgumentException("Invalid album ID argument") :
                 await _photoService.GetAllAsync(x => x.AlbumId == Guid.Parse(albumId), itemsPerPage, selectedPage);
 
-            return response.Success ? Ok(response) : BadRequest(response);
+            return Ok(response);
         }
 
         [HttpPost("{albumId}")]
@@ -47,7 +47,7 @@ namespace PhotoGalleryAPI.Controllers
 
             var response = await _photoService.AddAsync(newDto);
 
-            return response.Success ? Ok(response) : BadRequest(response);
+            return Ok(response);
 
         }
 
@@ -58,7 +58,7 @@ namespace PhotoGalleryAPI.Controllers
             var response = await _photoService.DeleteAsync(photoId);
 
             if (!response.Success)
-                return BadRequest(response);
+                return Ok(response);
             else
             {
                 await PhotoStorage.DeleteFileAsync(response.Data.Filename);

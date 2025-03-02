@@ -4,4 +4,5 @@ export interface APIResponse<T>{
     success: boolean;
     itemsPerPage: number;
     selectedPage: number;
+    itemsCount: number;
 }

@@ -48,7 +48,10 @@ namespace PhotoGalleryAPI.Services.Services
             else if(!checkPersonResult.Success)
                 return APIResponse<AuthorizationModel>.FailureResponse(checkPersonResult.Errors);
 
-            var defaultRole = (await _roleRepo.GetAllAsync(null)).Data.First(r => r.RoleName == "User");
+            var defaultRole = await _roleRepo.GetAllAsync(x=>x.RoleName == "User");
+
+            if (!defaultRole.Success)
+                return APIResponse<AuthorizationModel>.FailureResponse(defaultRole.Errors);
 
             var result = await _personRepo.AddAsync(new Person
            {
@@ -56,7 +59,7 @@ namespace PhotoGalleryAPI.Services.Services
                Username = model.Username,
                Email = model.Email,
                PasswordHash = PassHandler.CreatePasswordHash(model.Password),
-               RoleId = defaultRole.Id
+               RoleId = defaultRole.Data.First().Id
            });
 
             if (!result.Success)
@@ -73,7 +76,8 @@ namespace PhotoGalleryAPI.Services.Services
                 PersonId = checkPersonResult.Data.First().Id.ToString(),
                 KeepAuthorized = model.KeepAuthorized,
                 Token = tokenModel.Token,
-                TokenExpirationDate = tokenModel.ValidTo
+                TokenExpirationDate = tokenModel.ValidTo,
+                RoleName = defaultRole.Data.First().RoleName
             });
         }
 
@@ -89,6 +93,11 @@ namespace PhotoGalleryAPI.Services.Services
             if(!PassHandler.VerifyPassword(model.Password, checkPersonResult.Data.First().PasswordHash))
                 return APIResponse<AuthorizationModel>.FailureResponse("Invalid user identificator or password.");
 
+            var personRole = await _roleRepo.GetByIdAsync(checkPersonResult.Data.First().RoleId);
+
+            if(!personRole.Success)
+                return APIResponse<AuthorizationModel>.FailureResponse(personRole.Errors);
+
             var tokenModel = TokenMaker.CreateToken(checkPersonResult.Data.First(), new TokenDescriptorModel
             {
                 Key = Convert.ToString(_config["Jwt:Key"]),
@@ -100,7 +109,8 @@ namespace PhotoGalleryAPI.Services.Services
                 PersonId = checkPersonResult.Data.First().Id.ToString(),
                 KeepAuthorized = model.KeepAuthorized,
                 Token = tokenModel.Token,
-                TokenExpirationDate = tokenModel.ValidTo
+                TokenExpirationDate = tokenModel.ValidTo,
+                RoleName = personRole.Data.RoleName
             });
         }
     }

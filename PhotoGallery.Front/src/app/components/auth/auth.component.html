@@ -1,0 +1,70 @@
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-lg-6" style="margin-top:10%">
+            <form class="card" *ngIf="!isSignIn" [formGroup]="authForm" (submit)="signPerson()"> 
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-content-center">
+                        <h3>Sign Up</h3>
+                        <button type="button" class="btn btn-primary" (click)="toggleSignIn()">To Sign In</button>
+                    </div>
+                    <hr>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text">Username</span>
+                        <input class="form-control" formControlName="username">
+                    </div>
+                    <span *ngIf="authForm.controls['username'].dirty && authForm.hasError('required','username')" class="text-danger bold mb-4">Field is required</span>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text">Email</span>
+                        <input class="form-control" formControlName="email">
+                    </div>
+                    <span *ngIf="authForm.controls['email'].dirty && authForm.hasError('required','email')" class="text-danger bold mb-4">Field is required</span>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text">Password</span>
+                        <input class="form-control" formControlName="password">
+                    </div>
+                    <span *ngIf="authForm.controls['password'].dirty && authForm.hasError('required','password')" class="text-danger bold mb-4">Field is required</span>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text">Confirm Password</span>
+                        <input class="form-control" formControlName="passwordConfirm">
+                    </div>
+                    <span *ngIf="authForm.controls['passwordConfirm'].dirty && authForm.hasError('required','passwordConfirm')" class="text-danger bold mb-4">Field is required</span>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" formControlName="keepAuthorized">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Keep me signed in</label>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+            <form class="card" *ngIf="isSignIn" [formGroup]="authForm" (submit)="signPerson()">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-content-center">
+                        <h3>Sign In</h3>
+                        <button type="button" class="btn btn-primary" (click)="toggleSignIn()">To Sign Up</button>
+                    </div>
+                    <hr>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text">Username, email</span>
+                        <input class="form-control" formControlName="userIdentifier">
+                    </div>
+                    <span *ngIf="authForm.controls['userIdentifier'].dirty && authForm.hasError('required','userIdentifier')" class="text-danger bold mb-4">Field is required</span>
+                    <div class="input-group mb-2">
+                        <span class="input-group-text">Password</span>
+                        <input class="form-control" formControlName="password">
+                    </div>
+                    <span *ngIf="authForm.controls['password'].dirty && authForm.hasError('required','password')" class="text-danger bold mb-4">Field is required</span>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" formControlName="keepAuthorized"> 
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Keep me signed in</label>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success">Sign In</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>  
+</div>
+<app-loading *ngIf="isLoading"></app-loading>
+<app-alert [errors]="errors" *ngIf="errors.length > 0" (closeEvent)="closeAlert()"></app-alert>

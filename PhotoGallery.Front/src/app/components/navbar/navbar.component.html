@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/">Gallery</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/Albums" routerLinkActive="active">Albums</a>
+          </li>
+          <li class="nav-item" *ngIf="(currentAccount | async) && (currentAccount | async)?.roleName !== 'Admin'">
+            <a class="nav-link" [routerLink]="['/Albums/My',(currentAccount | async)?.personId]" routerLinkActive="active">My Albums</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item" *ngIf="!(currentAccount | async)">
+            <a class="nav-link" routerLink="/Auth" routerLinkActive="active">Auth</a>
+          </li>
+          <li class="nav-item" *ngIf="currentAccount | async">
+            <button type="button" class="nav-link" (click)="logOut()">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

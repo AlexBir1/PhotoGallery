@@ -80,7 +80,7 @@ namespace PhotoGalleryAPI.DAL.Repositories
             {
                 query = include(query);
             }
-            return DbResponse<IEnumerable<T>>.SuccessResponse(await query.Skip(countToSkip).Take(itemsPerPage).AsNoTracking().ToListAsync());
+            return DbResponse<IEnumerable<T>>.SuccessPagedResponse(await query.Skip(countToSkip).Take(itemsPerPage).AsNoTracking().ToListAsync(), itemsPerPage, selectedPage, await query.CountAsync());
         }
     }
 }

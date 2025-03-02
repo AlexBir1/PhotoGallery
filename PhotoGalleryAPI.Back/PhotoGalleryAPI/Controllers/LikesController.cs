@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Azure;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -28,26 +29,26 @@ namespace PhotoGalleryAPI.Controllers
             {
                 var response = await _likeService.AddAsync(dto);
 
-                return response.Success ? Ok(response) : BadRequest(response);
+                return Ok(response);
             }
             else
             {
                 var likeResult = await _likeService.GetByIdAsync(dto.Id);
 
                 if(!likeResult.Success)
-                    return BadRequest(likeResult);
+                    return Ok(likeResult);
 
-                if(likeResult.Data.IsLike == dto.IsLike)
+                if (likeResult.Data.IsLike == dto.IsLike)
                 {
                     var response = await _likeService.DeleteAsync(dto.Id);
 
-                    return response.Success ? Ok(response) : BadRequest(response);
+                    return Ok(response);
                 }
                 else
                 {
                     var response = await _likeService.UpdateAsync(dto.Id,dto);
 
-                    return response.Success ? Ok(response) : BadRequest(response);
+                    return Ok(response);
                 }
             }
         }

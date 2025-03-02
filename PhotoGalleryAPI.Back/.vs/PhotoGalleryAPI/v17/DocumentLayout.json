@@ -1,0 +1,292 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC2FF702-A4FB-4DF3-873B-A9DC4AE3DCEE}|PhotoGalleryAPI.Services\\PhotoGalleryAPI.Services.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi.services\\services\\albumservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC2FF702-A4FB-4DF3-873B-A9DC4AE3DCEE}|PhotoGalleryAPI.Services\\PhotoGalleryAPI.Services.csproj|solutionrelative:photogalleryapi.services\\services\\albumservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6788B3B5-4827-4EC0-9B41-252EDE11D9D1}|PhotoGalleryAPI.Response\\PhotoGalleryAPI.BaseResponse.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi.response\\responses\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6788B3B5-4827-4EC0-9B41-252EDE11D9D1}|PhotoGalleryAPI.Response\\PhotoGalleryAPI.BaseResponse.csproj|solutionrelative:photogalleryapi.response\\responses\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48273850-C824-45C6-9F35-922A6C87932B}|PhotoGalleryAPI\\PhotoGalleryAPI.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi\\controllers\\albumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48273850-C824-45C6-9F35-922A6C87932B}|PhotoGalleryAPI\\PhotoGalleryAPI.csproj|solutionrelative:photogalleryapi\\controllers\\albumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE1A7D57-039A-443C-8EDD-333600C70EF1}|PhotoGalleryAPI.DAL\\PhotoGalleryAPI.DAL.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi.dal\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE1A7D57-039A-443C-8EDD-333600C70EF1}|PhotoGalleryAPI.DAL\\PhotoGalleryAPI.DAL.csproj|solutionrelative:photogalleryapi.dal\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48273850-C824-45C6-9F35-922A6C87932B}|PhotoGalleryAPI\\PhotoGalleryAPI.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48273850-C824-45C6-9F35-922A6C87932B}|PhotoGalleryAPI\\PhotoGalleryAPI.csproj|solutionrelative:photogalleryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC2FF702-A4FB-4DF3-873B-A9DC4AE3DCEE}|PhotoGalleryAPI.Services\\PhotoGalleryAPI.Services.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi.services\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC2FF702-A4FB-4DF3-873B-A9DC4AE3DCEE}|PhotoGalleryAPI.Services\\PhotoGalleryAPI.Services.csproj|solutionrelative:photogalleryapi.services\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6788B3B5-4827-4EC0-9B41-252EDE11D9D1}|PhotoGalleryAPI.Response\\PhotoGalleryAPI.BaseResponse.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi.response\\responses\\dbresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6788B3B5-4827-4EC0-9B41-252EDE11D9D1}|PhotoGalleryAPI.Response\\PhotoGalleryAPI.BaseResponse.csproj|solutionrelative:photogalleryapi.response\\responses\\dbresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B03C05D-8E02-441D-AFA4-140F3B204A7D}|PhotoGalleryAPI.DTOs\\PhotoGalleryAPI.Shared.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi.dtos\\dtos\\basedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B03C05D-8E02-441D-AFA4-140F3B204A7D}|PhotoGalleryAPI.DTOs\\PhotoGalleryAPI.Shared.csproj|solutionrelative:photogalleryapi.dtos\\dtos\\basedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48273850-C824-45C6-9F35-922A6C87932B}|PhotoGalleryAPI\\PhotoGalleryAPI.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi\\controllers\\likescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48273850-C824-45C6-9F35-922A6C87932B}|PhotoGalleryAPI\\PhotoGalleryAPI.csproj|solutionrelative:photogalleryapi\\controllers\\likescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC2FF702-A4FB-4DF3-873B-A9DC4AE3DCEE}|PhotoGalleryAPI.Services\\PhotoGalleryAPI.Services.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi.services\\services\\photoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC2FF702-A4FB-4DF3-873B-A9DC4AE3DCEE}|PhotoGalleryAPI.Services\\PhotoGalleryAPI.Services.csproj|solutionrelative:photogalleryapi.services\\services\\photoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC2FF702-A4FB-4DF3-873B-A9DC4AE3DCEE}|PhotoGalleryAPI.Services\\PhotoGalleryAPI.Services.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi.services\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC2FF702-A4FB-4DF3-873B-A9DC4AE3DCEE}|PhotoGalleryAPI.Services\\PhotoGalleryAPI.Services.csproj|solutionrelative:photogalleryapi.services\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48273850-C824-45C6-9F35-922A6C87932B}|PhotoGalleryAPI\\PhotoGalleryAPI.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi\\controllers\\photoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48273850-C824-45C6-9F35-922A6C87932B}|PhotoGalleryAPI\\PhotoGalleryAPI.csproj|solutionrelative:photogalleryapi\\controllers\\photoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48273850-C824-45C6-9F35-922A6C87932B}|PhotoGalleryAPI\\PhotoGalleryAPI.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48273850-C824-45C6-9F35-922A6C87932B}|PhotoGalleryAPI\\PhotoGalleryAPI.csproj|solutionrelative:photogalleryapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48273850-C824-45C6-9F35-922A6C87932B}|PhotoGalleryAPI\\PhotoGalleryAPI.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{48273850-C824-45C6-9F35-922A6C87932B}|PhotoGalleryAPI\\PhotoGalleryAPI.csproj|solutionrelative:photogalleryapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B03C05D-8E02-441D-AFA4-140F3B204A7D}|PhotoGalleryAPI.DTOs\\PhotoGalleryAPI.Shared.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi.dtos\\models\\authorizationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B03C05D-8E02-441D-AFA4-140F3B204A7D}|PhotoGalleryAPI.DTOs\\PhotoGalleryAPI.Shared.csproj|solutionrelative:photogalleryapi.dtos\\models\\authorizationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE1A7D57-039A-443C-8EDD-333600C70EF1}|PhotoGalleryAPI.DAL\\PhotoGalleryAPI.DAL.csproj|d:\\photogallery-main\\photogalleryapi.back\\photogalleryapi.dal\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE1A7D57-039A-443C-8EDD-333600C70EF1}|PhotoGalleryAPI.DAL\\PhotoGalleryAPI.DAL.csproj|solutionrelative:photogalleryapi.dal\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BaseDTO.cs",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.DTOs\\DTOs\\BaseDTO.cs",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI.DTOs\\DTOs\\BaseDTO.cs",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.DTOs\\DTOs\\BaseDTO.cs",
+              "RelativeToolTip": "PhotoGalleryAPI.DTOs\\DTOs\\BaseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T00:41:02.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI\\Program.cs",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI\\Program.cs",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI\\Program.cs",
+              "RelativeToolTip": "PhotoGalleryAPI\\Program.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAC0AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T12:45:05.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlbumsController.cs",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI\\Controllers\\AlbumsController.cs",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI\\Controllers\\AlbumsController.cs",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI\\Controllers\\AlbumsController.cs",
+              "RelativeToolTip": "PhotoGalleryAPI\\Controllers\\AlbumsController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T18:56:32.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseService.cs",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.Services\\Services\\BaseService.cs",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI.Services\\Services\\BaseService.cs",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.Services\\Services\\BaseService.cs",
+              "RelativeToolTip": "PhotoGalleryAPI.Services\\Services\\BaseService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAEwEwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T18:30:23.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PhotoService.cs",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.Services\\Services\\PhotoService.cs",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI.Services\\Services\\PhotoService.cs",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.Services\\Services\\PhotoService.cs",
+              "RelativeToolTip": "PhotoGalleryAPI.Services\\Services\\PhotoService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T18:28:36.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PhotosController.cs",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI\\Controllers\\PhotosController.cs",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI\\Controllers\\PhotosController.cs",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI\\Controllers\\PhotosController.cs",
+              "RelativeToolTip": "PhotoGalleryAPI\\Controllers\\PhotosController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwBoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T21:24:35.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LikesController.cs",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI\\Controllers\\LikesController.cs",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI\\Controllers\\LikesController.cs",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI\\Controllers\\LikesController.cs",
+              "RelativeToolTip": "PhotoGalleryAPI\\Controllers\\LikesController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwBsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T22:21:16.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.DAL\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI.DAL\\Repositories\\Repository.cs",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.DAL\\Repositories\\Repository.cs",
+              "RelativeToolTip": "PhotoGalleryAPI.DAL\\Repositories\\Repository.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAEwFMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T18:24:00.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DbResponse.cs",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.Response\\Responses\\DbResponse.cs",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI.Response\\Responses\\DbResponse.cs",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.Response\\Responses\\DbResponse.cs",
+              "RelativeToolTip": "PhotoGalleryAPI.Response\\Responses\\DbResponse.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T18:17:47.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AlbumService.cs",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.Services\\Services\\AlbumService.cs",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI.Services\\Services\\AlbumService.cs",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.Services\\Services\\AlbumService.cs",
+              "RelativeToolTip": "PhotoGalleryAPI.Services\\Services\\AlbumService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T18:25:28.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "APIResponse.cs",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.Response\\Responses\\APIResponse.cs",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI.Response\\Responses\\APIResponse.cs",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.Response\\Responses\\APIResponse.cs",
+              "RelativeToolTip": "PhotoGalleryAPI.Response\\Responses\\APIResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T18:18:54.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PersonService.cs",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.Services\\Services\\PersonService.cs",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI.Services\\Services\\PersonService.cs",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.Services\\Services\\PersonService.cs",
+              "RelativeToolTip": "PhotoGalleryAPI.Services\\Services\\PersonService.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAcwC4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T19:26:42.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PhotoGalleryAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-01T13:42:29.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.DAL\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI.DAL\\Repositories\\IRepository.cs",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.DAL\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "PhotoGalleryAPI.DAL\\Repositories\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T18:15:50.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "PhotoGalleryAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T22:14:24.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthorizationModel.cs",
+              "DocumentMoniker": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.DTOs\\Models\\AuthorizationModel.cs",
+              "RelativeDocumentMoniker": "PhotoGalleryAPI.DTOs\\Models\\AuthorizationModel.cs",
+              "ToolTip": "D:\\PhotoGallery-main\\PhotoGalleryAPI.Back\\PhotoGalleryAPI.DTOs\\Models\\AuthorizationModel.cs",
+              "RelativeToolTip": "PhotoGalleryAPI.DTOs\\Models\\AuthorizationModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T19:25:59.491Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

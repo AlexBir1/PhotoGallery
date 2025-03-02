@@ -11,13 +11,20 @@ namespace PhotoGalleryAPI.BaseResponse.Responses
     {
         public bool Success { get; set; }
         public T Data { get; set; }
-        public IEnumerable<string> Errors { get; set; } 
+        public IEnumerable<string> Errors { get; set; }
+        public int ItemsPerPage { get; set; }
+        public int SelectedPage { get; set; }
+        public int ItemsCount { get; set; }
 
-        public APIResponse(bool success, T data, IEnumerable<string> errors = null)
+        public APIResponse(bool success, T data, IEnumerable<string> errors = null, int itemsPerPage = 1, int selectedPage = 1, int itemsCount = 1)
         {
             Success = success;
             Data = data;
             Errors = errors ?? new List<string>();
+
+            ItemsPerPage = itemsPerPage;
+            SelectedPage = selectedPage;
+            ItemsCount = itemsCount;
         }
 
         public static APIResponse<T> SuccessResponse(T data)
@@ -25,9 +32,9 @@ namespace PhotoGalleryAPI.BaseResponse.Responses
             return new APIResponse<T>(true, data);
         }
 
-        public static APIResponse<T> SuccessPagedResponse(T data)
+        public static APIResponse<T> SuccessPagedResponse(T data, int itemsPerPage = 1, int selectedPage = 1, int itemsCount = 1)
         {
-            return new APIResponse<T>(true, data);
+            return new APIResponse<T>(true, data, null, itemsPerPage, selectedPage, itemsCount);
         }
 
         public static APIResponse<T> FailureResponse(string error)

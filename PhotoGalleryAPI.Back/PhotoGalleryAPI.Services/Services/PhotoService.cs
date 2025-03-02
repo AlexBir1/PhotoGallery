@@ -32,14 +32,16 @@ namespace PhotoGalleryAPI.Services.Services
 
         public override async Task<IResponse<IEnumerable<PhotoDTO>>> GetAllAsync(Expression<Func<Photo, bool>> exp = null, int itemsPerPage = 1, int selectedPage = 1)
         {
-            var response = exp != null ? await _photoRepo.GetAllAsync(itemsPerPage, selectedPage, exp, x => x.Include(y => y.Likes)) : await _photoRepo.GetAllAsync(itemsPerPage, selectedPage,null,x=>x.Include(y=>y.Likes));
+            var response = exp != null ? 
+                await _photoRepo.GetAllAsync(itemsPerPage, selectedPage, exp, x => x.Include(y => y.Likes)) as DbResponse<IEnumerable<Photo>> : 
+                await _photoRepo.GetAllAsync(itemsPerPage, selectedPage,null,x=>x.Include(y=>y.Likes)) as DbResponse<IEnumerable<Photo>>;
             if (!response.Success)
             {
                 return APIResponse<IEnumerable<PhotoDTO>>.FailureResponse(response.Errors);
             }
 
             var dtos = _mapper.Map<IEnumerable<PhotoDTO>>(response.Data);
-            return APIResponse<IEnumerable<PhotoDTO>>.SuccessResponse(dtos);
+            return APIResponse<IEnumerable<PhotoDTO>>.SuccessPagedResponse(dtos, itemsPerPage, selectedPage, response.ItemsCount);
         }
     }
 }

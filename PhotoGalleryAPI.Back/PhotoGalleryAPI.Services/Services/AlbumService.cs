@@ -32,12 +32,12 @@ namespace PhotoGalleryAPI.Services.Services
 
         public override async Task<IResponse<IEnumerable<AlbumDTO>>> GetAllAsync(Expression<Func<Album, bool>> exp = null, int itemsPerPage = 1, int selectedPage = 1)
         {
-            var result = await _albumRepo.GetAllAsync(itemsPerPage, selectedPage, exp, x => x.Include(y => y.Photos.Take(1)));
+            var result = await _albumRepo.GetAllAsync(itemsPerPage, selectedPage, exp, x => x.Include(y => y.Photos.Take(1))) as DbResponse<IEnumerable<Album>>;
 
             if (!result.Success)
                 return APIResponse<IEnumerable<AlbumDTO>>.FailureResponse(result.Errors);
 
-            return APIResponse<IEnumerable<AlbumDTO>>.SuccessResponse(_mapper.Map<IEnumerable<AlbumDTO>>(result.Data));
+            return APIResponse<IEnumerable<AlbumDTO>>.SuccessPagedResponse(_mapper.Map<IEnumerable<AlbumDTO>>(result.Data),itemsPerPage,selectedPage,result.ItemsCount);
         }
     }
 }

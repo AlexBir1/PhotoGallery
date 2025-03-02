@@ -8,6 +8,6 @@ namespace PhotoGalleryAPI.Shared.DTOs
 {
     public abstract class BaseDTO
     {
-        public string Id { get; set; } = Guid.NewGuid().ToString();
+        public string Id { get; set; }
     }
 }

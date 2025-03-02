@@ -1,0 +1,53 @@
+<div class="container mt-4">
+    <h2>Photos</h2>
+    <div class="row justify-content-center">
+      <div *ngFor="let photo of photos | paginate : {
+        itemsPerPage: pageParams.itemsPerPage,
+        currentPage: pageParams.selectedPage,
+        totalItems: pageParams.itemsCount
+      };" class="col-md-4 my-2">
+        <div class="card" style="height:100%">
+          <div class="card-header">
+            <h5 class="card-title">{{ photo.filename }}</h5>
+          </div>
+          <div class="card-body d-flex justify-content-center" style="max-height: 150px;">
+            <img
+            height="100%"
+              [src]="photoPath + photo.filename" (click)="photoClick(photo.id)"
+            />
+          </div>
+          <div class="card-footer d-flex justify-content-center" *ngIf="currentUser">
+            <button class="btn btn-success btn-sm me-2" (click)="onLike(photo.id)">
+              Like {{likeCount(photo.likes)}}
+            </button>
+            <button class="btn btn-warning btn-sm me-2" (click)="onDislike(photo.id)">
+              Dislike {{dislikeCount(photo.likes)}}
+            </button>
+            <button class="btn btn-danger btn-sm" (click)="onDelete(photo.id)" *ngIf="currentUser.personId === currentAlbum.createdByPersonId">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-2" *ngIf="currentUser && (currentUser.personId === currentAlbum.createdByPersonId)">
+        <div class="card" style="height:100%">
+          <div class="card-header">
+            <h5 class="card-title">Add photo</h5>
+          </div>
+          <div class="card-body">
+            <input class="form-control mb-2" type="file" (change)="onUpload($event)" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mt-2">
+      <pagination-controls
+        (pageChange)="onPageChange($event)"
+        previousLabel="Previous"
+        nextLabel="Next"
+      ></pagination-controls>
+    </div>
+  </div>
+  <app-loading *ngIf="isLoading"></app-loading>
+  <app-alert [errors]="errors" *ngIf="errors.length > 0" (closeEvent)="closeAlert()"></app-alert>
+  <app-full-size-photo *ngIf="selectedPhoto" [photo]="selectedPhoto" (closeEvent)="closePhoto()"></app-full-size-photo>

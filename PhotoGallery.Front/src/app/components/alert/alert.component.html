@@ -1,0 +1,19 @@
+
+<div class="position-absolute" style="bottom: 5px; width:50%; right:20px; z-index: 100" >
+    <div class="container-fluid">
+      <div class="row justify-content-end">
+        <div class="col-lg-6">
+            <div class="alert alert-dismissible alert-warning" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+                <button type="button" class="btn-close" (click)="close()"></button>
+                <ul>
+                    <li *ngFor="let error of errors">{{error}}</li>
+                </ul>
+                <div class="text-end">
+                    <label *ngIf="!isMouseIn">Close in: {{lifeTimeSecs}}</label>
+                    <label *ngIf="isMouseIn">Close me manually</label>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

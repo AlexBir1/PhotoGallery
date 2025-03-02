@@ -39,14 +39,16 @@ namespace PhotoGalleryAPI.Services.Services
 
         public virtual async Task<IResponse<IEnumerable<TDto>>> GetAllAsync(Expression<Func<TEntity, bool>> exp = null, int itemsPerPage = 1, int selectedPage = 1)
         {
-            var response = exp != null ? await _repository.GetAllAsync(itemsPerPage, selectedPage, exp) : await _repository.GetAllAsync(itemsPerPage, selectedPage);
+            var response = exp != null ? 
+                await _repository.GetAllAsync(itemsPerPage, selectedPage, exp) as DbResponse<IEnumerable<TEntity>>: 
+                await _repository.GetAllAsync(itemsPerPage, selectedPage) as DbResponse<IEnumerable<TEntity>>;
             if (!response.Success)
             {
                 return APIResponse<IEnumerable<TDto>>.FailureResponse(response.Errors);
             }
 
             var dtos = _mapper.Map<IEnumerable<TDto>>(response.Data);
-            return APIResponse<IEnumerable<TDto>>.SuccessResponse(dtos);
+            return APIResponse<IEnumerable<TDto>>.SuccessPagedResponse(dtos,itemsPerPage,selectedPage, response.ItemsCount);
         }
 
         public virtual async Task<IResponse<TDto>> GetByIdAsync(TKey id)

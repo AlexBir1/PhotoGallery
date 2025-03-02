@@ -23,7 +23,7 @@ namespace PhotoGalleryAPI.Controllers
         public async Task<ActionResult<APIResponse<AuthorizationModel>>> SignUp([FromBody] SignUpModel model)
         {
             var result = await _personService.SignUpAsync(model);
-            return result.Success ? Ok(APIResponse<AuthorizationModel>.SuccessResponse(result.Data)) : BadRequest(result.Errors);
+            return Ok(result);
         }
 
         [HttpPost("SignIn")]
@@ -31,7 +31,7 @@ namespace PhotoGalleryAPI.Controllers
         public async Task<ActionResult<APIResponse<AuthorizationModel>>> SignIn([FromBody] SignInModel model)
         {
             var result = await _personService.SignInAsync(model);
-            return result.Success ? Ok(result) : BadRequest(result);
+            return Ok(result);
         }
     }
 }
